@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+</head>
+<body>
+
+    <audio id="audio" src="Sound/mjau3-82957.mp3"></audio>
+    <div id="div1">
+        KUCING
+    </div>
+
+    <audio id="audio1" src="Sound/whining-dog-6110.mp3"></audio>
+    <div id="div2">
+        ANJING
+    </div>
+
+    <audio id="audio2" src="Sound/monkey-128368.mp3"></audio>
+    <div id="div3">
+        MONYET
+    </div>
+    
+    <script src="Javascript/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $("document").ready(function(){
+            $("#div1").mouseover(function(){
+                $(this).css({
+                    background: "url('https://www.rukita.co/stories/wp-content/uploads/2022/04/foto-kucing-oren.jpg')"
+                });
+                document.getElementById("audio").play();
+            });
+
+            $("div").mouseout(function(){
+                $(this).css({
+                    background: "#78A083"
+                });
+                document.getElementById("audio").pause();
+                document.getElementById("audio1").pause();
+                document.getElementById("audio2").pause();
+            });
+
+            $("#div2").mouseover(function(){
+                $(this).css({
+                    background: "url('https://img.okezone.com/content/2023/08/21/54/2868373/sedih-anjing-meme-shiba-inu-mati-usai-jalani-operasi-leukemia-TZrN5him8p.jpg')"
+                });
+                document.getElementById("audio1").play();
+            });
+
+            $("#div3").mouseover(function(){
+                $(this).css({
+                    background: "url('https://i.pinimg.com/736x/c1/e3/86/c1e386fd42f81a50c35eb99a8610db82.jpg')"
+                });
+                document.getElementById("audio2").play();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

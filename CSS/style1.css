@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    margin: auto;
+    background-color: #35374B;
+}
+#div1, #div2, #div3{
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+    color: #344955;
+    border: 3px solid #ddd ;
+    padding: 10px;
+    text-align: center;
+    background: greenyellow;
+    height: 400px;
+    cursor: pointer;
+    background-image: no-repeat;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+  }
+  
